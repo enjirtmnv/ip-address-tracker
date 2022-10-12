@@ -1,6 +1,6 @@
 # IP address tracker
 
-Данные о местоположении приложение получает с помощью асинхронного запроса Fetch API с сервиса [IP Geolocation API by IPify](https://geo.ipify.org/). Для создания карты используется библиотека [LeafletJS](https://leafletjs.com/). 
+Данные о местоположении приложение получает с помощью асинхронного запроса Fetch API с сервиса [IP Geolocation API by IPify](https://geo.ipify.org/). Для создания карты используется библиотека [LeafletJS](https://leafletjs.com/). Стили написаны с ипользованием фреймворка [TailwindCSS](https://tailwindcss.com/)
 
 Чтобы начать поиск в поле поиска вводим нужный ip или домен.
 
@@ -14,4 +14,4 @@
 - adererror.com
 
 
-**Чтобы начать работу с приложением нажмите [СЮДА](https://enjirtmnv.github.io/ip-address-tracker/)**
+## Чтобы начать работу с приложением нажмите [СЮДА](https://enjirtmnv.github.io/ip-address-tracker/)
