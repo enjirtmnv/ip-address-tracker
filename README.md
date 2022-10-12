@@ -1,6 +1,6 @@
 # IP address tracker
 
-Приложение для отслеживания IP-адресов.
+**Это приложение для отслеживания IP-адресов.**
 
 Данные о местоположении приложение получает с помощью асинхронного запроса Fetch API с сервиса [IP Geolocation API by IPify](https://geo.ipify.org/). Для создания карты используется библиотека [LeafletJS](https://leafletjs.com/). Стили написаны с ипользованием фреймворка [TailwindCSS](https://tailwindcss.com/)
 
