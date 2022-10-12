@@ -2,7 +2,7 @@
 
 **Приложение позволяет узнать местоположение пр IP-адресу**
 
-Данные о местоположении приложение получает с помощью асинхронного запроса Fetch API с сервиса [IP Geolocation API by IPify](https://geo.ipify.org/). Для создания карты используется библиотека [LeafletJS](https://leafletjs.com/). Стили написаны с ипользованием фреймворка [TailwindCSS](https://tailwindcss.com/)
+Данные о местоположении приложение получает с помощью асинхронного запроса Fetch API с сервиса [IP Geolocation API by IPify](https://geo.ipify.org/). Для создания карты используется библиотека [LeafletJS](https://leafletjs.com/). Стили написаны с ипользованием фреймворка [TailwindCSS](https://tailwindcss.com/).
 
 Чтобы начать поиск в поле поиска вводим нужный IP или домен.
 
