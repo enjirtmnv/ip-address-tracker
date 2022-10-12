@@ -13,4 +13,4 @@
 - youngmoney.com
 - adererror.com
 
-**Чтобы открыть приложение нажмите [сюда](https://enjirtmnv.github.io/ip-address-tracker/)**
+**Чтобы начать работу с приложением нажмите [СЮДА](https://enjirtmnv.github.io/ip-address-tracker/)**
