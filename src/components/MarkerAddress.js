@@ -17,7 +17,7 @@ const MarkerAddress = ({address, domain}) => {
 
     return (
       <Marker icon={icon } position={position}>
-        <Popup>{domain}</Popup>
+        <Popup>{domain ? domain : address.isp} </Popup>
       </Marker>
     );
 };

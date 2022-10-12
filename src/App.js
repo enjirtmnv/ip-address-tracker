@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 
-import MarkerAddress from "./MarkerAddress";
+import MarkerAddress from "./components/MarkerAddress";
 import arrow from "./images/icon-arrow.svg";
 import background from "./images/pattern-bg.png";
+import InfoItem from "./components/InfoItem.js";
 
 function App() {
   const [address, setAddress] = useState(null);
@@ -57,11 +58,11 @@ function App() {
   return (
     <>
       <section className="w-screen h-screen bg-[#5364c8]">
-        <div className="absolute w-screen h-80">
+        <div className="absolute w-screen h-96">
           <img
             src={background}
             alt=""
-            className="w-full h-80 object-cover"
+            className="w-full h-96 object-cover"
           />
         </div>
         <article className="relative pt-20 px-8 pb-8">
@@ -97,29 +98,14 @@ function App() {
             className="relative bg-white rounded-lg 
               shadow p-8 mx-8 grid grid-cols-1 gap-8 md:grid-cols-2 
               lg:grid-cols-4 lg:max-w-4xl xl:max-w-6xl lg:mx-auto text-center md:text-left
-              lg:-mb-20"
+              -mb-56 md:-mb-28 lg:-mb-20"
             style={{zIndex: 500}}
           >
-
-          <div className="lg:border-r lg:border-slate-400 pr-8">
-            <h2 className="uppercase text-sm font-bold text-slate-500 tracking-wider mb-3">IP Address</h2>
-            <p className="font-bold text-slate-900 text-lg md:text-xl xl:text-2xl">{address.ip}</p>
-          </div>  
-
-          <div className="lg:border-r lg:border-slate-400 pr-8">
-            <h2 className="uppercase text-sm font-bold text-slate-500 tracking-wider mb-3">Location</h2>
-            <p className="font-bold text-slate-900 text-lg md:text-xl xl:text-2xl">{address.location.city}, {address.location.region}</p>
-          </div>  
-
-          <div className="lg:border-r lg:border-slate-400 rx-8">
-            <h2 className="uppercase text-sm font-bold text-slate-500 tracking-wider mb-3">Timezone</h2>
-            <p className="font-bold text-slate-900 text-lg md:text-xl xl:text-2xl">UTC {address.location.timezone}</p>
-          </div>  
-
-          <div className="pr-8">
-            <h2 className="uppercase text-sm font-bold text-slate-500 tracking-wider mb-3">Isp</h2>
-            <p className="font-bold text-slate-900 text-lg md:text-xl xl:text-2xl">{address.isp}</p>
-          </div>  
+            
+          <InfoItem name='IP Address' info={address.ip}/>
+          <InfoItem name='Location' info={`${address.location.city}, ${address.location.region}`}/>
+          <InfoItem name='Timezone' info={address.location.timezone}/>
+          <InfoItem name='Isp' info={address.isp}/>
 
         </article>  
         <MapContainer 
